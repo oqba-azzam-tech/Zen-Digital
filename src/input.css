@@ -1,0 +1,169 @@
+ @import "tailwindcss";
+
+ @theme {
+    --color-primary : #3a86ff;
+    --color-back : #ffffff;
+    --color-watermelon : #ff006e ;
+    --color-texte-pri : #ffffff;
+    --color-lavander :#8338ec ;
+    --color-icon-back :#3a86ff3a ;
+    --color-grey:#6c757d;
+    --color-secondry-tex : #000000;
+    --color-wihet-body : #f8f9fa;
+    --color-light-grey:#e9ecef; 
+    --color-footer : #212529;
+    --color-tex-footer : #cbd5e1;
+    --color-white-i : #ffffff16;
+     /* *************************************** */
+ }
+
+ .dark-theem {
+    --color-wihet-body : #121212;
+    --color-back : #212529;
+    --color-secondry-tex : #ffffff;
+    --color-grey:#adb5bd;
+    --color-light-grey: #2d2d2d ;
+ }
+ .center-cont {
+    @apply container mx-auto w-[80%] max-w-[1200px];
+ }
+
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    scroll-behavior: smooth; 
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+/* * {
+    border: solid red 3px;
+} */
+
+.hide-it {
+    display: none;
+}
+.show-it {
+    display: block;
+    
+}
+
+.white-color {
+    color: #ffffff;
+}
+
+.bton {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+ /* normalis */
+
+ /* header */
+.shadow-1 {
+    box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, .1);
+}
+
+.shadow-2 {
+    box-shadow: 5px 4px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-3 {
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.moon-icon {
+    transform: rotate(27deg);
+}
+
+.services-btn , .home-btn {
+    transition: 0.3s;
+}
+
+.services-btn:hover , .home-btn:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.started{
+    transition: 0.3s;
+}
+
+.started:hover{
+    transform: translateY(-5px);
+    color: var(--color-white);
+}
+
+/* header */
+
+/* hero section */
+
+.hero-cont{
+    
+}
+
+.hero-1{
+    background: linear-gradient(135deg, var(--color-primary), var(--color-lavander))
+}
+
+.a-button:hover {
+     
+    transform: translateY(-3px);
+    box-shadow: inset 2px 4px 5px 100px rgba(0, 0, 0, .20);
+    
+}
+
+/* hero section */
+/* why chose us */
+.cards:hover {
+    transform: translateY(-25px);
+}
+/* why chose us */
+
+/* revieow */
+.active {
+    display: flex;
+}
+/* revieow */
+
+/* main - 2 */
+.form-input:focus  {
+    box-shadow: 0px 0px 10px -1px rgba(58,134,255,0.7);
+    outline:solid 0.5px var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+/* main - 2 */
+/* footer */
+.change{
+    transition: 0.3s;
+}
+
+.change:hover {
+    color: var(--color-white);
+}
+
+.social-icon{
+    position: relative;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    background-color: var(--color-primary);
+}
+
+.social-icon::after {
+    content:"";
+    width: 50%;
+    height:2px;
+    position: absolute;
+    top: 26.5px;
+    left:25%;
+    background-color: var(--color-white);
+}
+
+/* footer */
+.dot.active {
+    background-color: var(--color-primary);
+    scale: 1.3;
+}
